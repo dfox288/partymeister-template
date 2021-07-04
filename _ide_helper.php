@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel, to provide autocomplete information to your IDE
- * Generated for Laravel 8.42.1.
+ * Generated for Laravel 8.49.1.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -1090,6 +1090,32 @@
                         $instance->singletonIf($abstract, $concrete);
         }
                     /**
+         * Register a scoped binding in the container.
+         *
+         * @param string $abstract
+         * @param \Closure|string|null $concrete
+         * @return void 
+         * @static 
+         */ 
+        public static function scoped($abstract, $concrete = null)
+        {            //Method inherited from \Illuminate\Container\Container         
+                        /** @var \Illuminate\Foundation\Application $instance */
+                        $instance->scoped($abstract, $concrete);
+        }
+                    /**
+         * Register a scoped binding if it hasn't already been registered.
+         *
+         * @param string $abstract
+         * @param \Closure|string|null $concrete
+         * @return void 
+         * @static 
+         */ 
+        public static function scopedIf($abstract, $concrete = null)
+        {            //Method inherited from \Illuminate\Container\Container         
+                        /** @var \Illuminate\Foundation\Application $instance */
+                        $instance->scopedIf($abstract, $concrete);
+        }
+                    /**
          * "Extend" an abstract type in the container.
          *
          * @param string $abstract
@@ -1360,6 +1386,17 @@
         {            //Method inherited from \Illuminate\Container\Container         
                         /** @var \Illuminate\Foundation\Application $instance */
                         $instance->forgetInstances();
+        }
+                    /**
+         * Clear all of the scoped instances from the container.
+         *
+         * @return void 
+         * @static 
+         */ 
+        public static function forgetScopedInstances()
+        {            //Method inherited from \Illuminate\Container\Container         
+                        /** @var \Illuminate\Foundation\Application $instance */
+                        $instance->forgetScopedInstances();
         }
                     /**
          * Get the globally available instance of the container.
@@ -1935,7 +1972,7 @@
          *
          * @param string $password
          * @param string $attribute
-         * @return bool|null 
+         * @return \Motor\Backend\Models\User|null 
          * @throws \Illuminate\Auth\AuthenticationException
          * @static 
          */ 
@@ -2590,6 +2627,19 @@
                         return $instance->compileEndOnce();
         }
                     /**
+         * Add a handler to be executed before echoing a given class.
+         *
+         * @param string|callable $class
+         * @param callable|null $handler
+         * @return void 
+         * @static 
+         */ 
+        public static function stringable($class, $handler = null)
+        {
+                        /** @var \Illuminate\View\Compilers\BladeCompiler $instance */
+                        $instance->stringable($class, $handler);
+        }
+                    /**
          * Compile Blade echos into valid PHP.
          *
          * @param string $value
@@ -2600,6 +2650,18 @@
         {
                         /** @var \Illuminate\View\Compilers\BladeCompiler $instance */
                         return $instance->compileEchos($value);
+        }
+                    /**
+         * Apply the echo handler for the value if it exists.
+         *
+         * @param $value string
+         * @return string 
+         * @static 
+         */ 
+        public static function applyEchoHandler($value)
+        {
+                        /** @var \Illuminate\View\Compilers\BladeCompiler $instance */
+                        return $instance->applyEchoHandler($value);
         }
          
     }
@@ -4617,6 +4679,17 @@
                         return $instance->raw($value);
         }
                     /**
+         * Determine if the database connection has modified any database records.
+         *
+         * @return bool 
+         * @static 
+         */ 
+        public static function hasModifiedRecords()
+        {            //Method inherited from \Illuminate\Database\Connection         
+                        /** @var \Illuminate\Database\MySqlConnection $instance */
+                        return $instance->hasModifiedRecords();
+        }
+                    /**
          * Indicate if any records have been modified.
          *
          * @param bool $value
@@ -4629,6 +4702,18 @@
                         $instance->recordsHaveBeenModified($value);
         }
                     /**
+         * Set the record modification state.
+         *
+         * @param bool $value
+         * @return \Illuminate\Database\MySqlConnection 
+         * @static 
+         */ 
+        public static function setRecordModificationState($value)
+        {            //Method inherited from \Illuminate\Database\Connection         
+                        /** @var \Illuminate\Database\MySqlConnection $instance */
+                        return $instance->setRecordModificationState($value);
+        }
+                    /**
          * Reset the record modification state.
          *
          * @return void 
@@ -4638,6 +4723,18 @@
         {            //Method inherited from \Illuminate\Database\Connection         
                         /** @var \Illuminate\Database\MySqlConnection $instance */
                         $instance->forgetRecordModificationState();
+        }
+                    /**
+         * Indicate that the connection should use the write PDO connection for reads.
+         *
+         * @param bool $value
+         * @return \Illuminate\Database\MySqlConnection 
+         * @static 
+         */ 
+        public static function useWriteConnectionWhenReading($value = true)
+        {            //Method inherited from \Illuminate\Database\Connection         
+                        /** @var \Illuminate\Database\MySqlConnection $instance */
+                        return $instance->useWriteConnectionWhenReading($value);
         }
                     /**
          * Is Doctrine available?
@@ -4763,6 +4860,17 @@
         {            //Method inherited from \Illuminate\Database\Connection         
                         /** @var \Illuminate\Database\MySqlConnection $instance */
                         return $instance->getName();
+        }
+                    /**
+         * Get the database connection full name.
+         *
+         * @return string|null 
+         * @static 
+         */ 
+        public static function getNameWithReadWriteType()
+        {            //Method inherited from \Illuminate\Database\Connection         
+                        /** @var \Illuminate\Database\MySqlConnection $instance */
+                        return $instance->getNameWithReadWriteType();
         }
                     /**
          * Get an option from the configuration options.
@@ -5001,6 +5109,18 @@
         {            //Method inherited from \Illuminate\Database\Connection         
                         /** @var \Illuminate\Database\MySqlConnection $instance */
                         return $instance->setDatabaseName($database);
+        }
+                    /**
+         * Set the read / write type of the connection.
+         *
+         * @param string|null $readWriteType
+         * @return \Illuminate\Database\MySqlConnection 
+         * @static 
+         */ 
+        public static function setReadWriteType($readWriteType)
+        {            //Method inherited from \Illuminate\Database\Connection         
+                        /** @var \Illuminate\Database\MySqlConnection $instance */
+                        return $instance->setReadWriteType($readWriteType);
         }
                     /**
          * Get the table prefix for the connection.
@@ -6760,6 +6880,8 @@
             /**
      * 
      *
+     * @method static \Illuminate\Log\Logger withContext(array $context = [])
+     * @method static \Illuminate\Log\Logger withoutContext()
      * @method static void write(string $level, string $message, array $context = [])
      * @method static void listen(\Closure $callback)
      * @see \Illuminate\Log\Logger
@@ -12326,6 +12448,18 @@
                         return $instance->cloud();
         }
                     /**
+         * Build an on-demand disk.
+         *
+         * @param string|array $config
+         * @return \Illuminate\Filesystem\FilesystemAdapter 
+         * @static 
+         */ 
+        public static function build($config)
+        {
+                        /** @var \Illuminate\Filesystem\FilesystemManager $instance */
+                        return $instance->build($config);
+        }
+                    /**
          * Create an instance of the local driver.
          *
          * @param array $config
@@ -17123,6 +17257,19 @@
                         return $instance->compileEndOnce();
         }
                     /**
+         * Add a handler to be executed before echoing a given class.
+         *
+         * @param string|callable $class
+         * @param callable|null $handler
+         * @return void 
+         * @static 
+         */ 
+        public static function stringable($class, $handler = null)
+        {            //Method inherited from \Illuminate\View\Compilers\BladeCompiler         
+                        /** @var \Wpb\String_Blade_Compiler\Compilers\StringBladeCompiler $instance */
+                        $instance->stringable($class, $handler);
+        }
+                    /**
          * Compile Blade echos into valid PHP.
          *
          * @param string $value
@@ -17133,6 +17280,18 @@
         {            //Method inherited from \Illuminate\View\Compilers\BladeCompiler         
                         /** @var \Wpb\String_Blade_Compiler\Compilers\StringBladeCompiler $instance */
                         return $instance->compileEchos($value);
+        }
+                    /**
+         * Apply the echo handler for the value if it exists.
+         *
+         * @param $value string
+         * @return string 
+         * @static 
+         */ 
+        public static function applyEchoHandler($value)
+        {            //Method inherited from \Illuminate\View\Compilers\BladeCompiler         
+                        /** @var \Wpb\String_Blade_Compiler\Compilers\StringBladeCompiler $instance */
+                        return $instance->applyEchoHandler($value);
         }
          
     }
@@ -17478,7 +17637,7 @@ namespace  {
              * @param mixed $operator
              * @param mixed $value
              * @param string $boolean
-             * @return \Illuminate\Database\Eloquent\Model|static 
+             * @return \Illuminate\Database\Eloquent\Model|static|null 
              * @static 
              */ 
             public static function firstWhere($column, $operator = null, $value = null, $boolean = 'and')
@@ -17815,7 +17974,7 @@ namespace  {
              * @param array $columns
              * @param string $cursorName
              * @param string|null $cursor
-             * @return \Illuminate\Contracts\Pagination\Paginator 
+             * @return \Illuminate\Contracts\Pagination\CursorPaginator 
              * @throws \Illuminate\Pagination\CursorPaginationException
              * @static 
              */ 
@@ -18610,21 +18769,6 @@ namespace  {
             }
              
                 /**
-             * Apply the callback's query changes if the given "value" is true.
-             *
-             * @param mixed $value
-             * @param callable $callback
-             * @param callable|null $default
-             * @return mixed|$this 
-             * @static 
-             */ 
-            public static function when($value, $callback, $default = null)
-            {
-                                /** @var \Illuminate\Database\Eloquent\Builder $instance */
-                                return $instance->when($value, $callback, $default);
-            }
-             
-                /**
              * Pass the query to a given callback.
              *
              * @param callable $callback
@@ -18638,12 +18782,27 @@ namespace  {
             }
              
                 /**
-             * Apply the callback's query changes if the given "value" is false.
+             * Apply the callback if the given "value" is truthy.
              *
              * @param mixed $value
              * @param callable $callback
              * @param callable|null $default
-             * @return mixed|$this 
+             * @return mixed 
+             * @static 
+             */ 
+            public static function when($value, $callback, $default = null)
+            {
+                                /** @var \Illuminate\Database\Eloquent\Builder $instance */
+                                return $instance->when($value, $callback, $default);
+            }
+             
+                /**
+             * Apply the callback if the given "value" is falsy.
+             *
+             * @param mixed $value
+             * @param callable $callback
+             * @param callable|null $default
+             * @return mixed 
              * @static 
              */ 
             public static function unless($value, $callback, $default = null)
@@ -19171,7 +19330,7 @@ namespace  {
                 /**
              * Add an "or where null" clause to the query.
              *
-             * @param string $column
+             * @param string|array $column
              * @return \Illuminate\Database\Query\Builder 
              * @static 
              */ 
@@ -20058,6 +20217,31 @@ namespace  {
             {
                                 /** @var \Illuminate\Database\Query\Builder $instance */
                                 return $instance->sharedLock();
+            }
+             
+                /**
+             * Register a closure to be invoked before the query is executed.
+             *
+             * @param callable $callback
+             * @return \Illuminate\Database\Query\Builder 
+             * @static 
+             */ 
+            public static function beforeQuery($callback)
+            {
+                                /** @var \Illuminate\Database\Query\Builder $instance */
+                                return $instance->beforeQuery($callback);
+            }
+             
+                /**
+             * Invoke the "before query" modification callbacks.
+             *
+             * @return void 
+             * @static 
+             */ 
+            public static function applyBeforeQueryCallbacks()
+            {
+                                /** @var \Illuminate\Database\Query\Builder $instance */
+                                $instance->applyBeforeQueryCallbacks();
             }
              
                 /**

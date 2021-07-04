@@ -183,14 +183,13 @@ return [
         Motor\Core\Providers\MotorServiceProvider::class,
         Motor\Backend\Providers\MotorServiceProvider::class,
         Motor\Media\Providers\MotorServiceProvider::class,
-        Motor\Docs\Providers\MotorDocsServiceProvider::class,
 
         Partymeister\Frontend\Providers\PartymeisterServiceProvider::class,
         Motor\CMS\Providers\MotorServiceProvider::class,
 
         App\Providers\DuskServiceProvider::class,
 
-        L5Swagger\L5SwaggerServiceProvider::class,
+        //L5Swagger\L5SwaggerServiceProvider::class,
 
     ],
 
