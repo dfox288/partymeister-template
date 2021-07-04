@@ -5264,16 +5264,16 @@
         },
         {
             "name": "partymeister/frontend",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-frontend.git",
-                "reference": "c03ceb3ad33d783c958d660413a1eee8951420d8"
+                "reference": "a3b4f7547abf8f40376be71275d201fe0b0e8512"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-frontend/zipball/c03ceb3ad33d783c958d660413a1eee8951420d8",
-                "reference": "c03ceb3ad33d783c958d660413a1eee8951420d8",
+                "url": "https://api.github.com/repos/partymeister/partymeister-frontend/zipball/a3b4f7547abf8f40376be71275d201fe0b0e8512",
+                "reference": "a3b4f7547abf8f40376be71275d201fe0b0e8512",
                 "shasum": ""
             },
             "require": {
@@ -5312,9 +5312,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-frontend/issues",
-                "source": "https://github.com/partymeister/partymeister-frontend/tree/1.1.1"
+                "source": "https://github.com/partymeister/partymeister-frontend/tree/1.1.2"
             },
-            "time": "2021-05-01T10:51:28+00:00"
+            "time": "2021-07-04T17:26:38+00:00"
         },
         {
             "name": "partymeister/slides",
