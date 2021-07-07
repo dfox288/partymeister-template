@@ -4646,16 +4646,16 @@
         },
         {
             "name": "myclabs/php-enum",
-            "version": "1.8.1",
+            "version": "1.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/php-enum.git",
-                "reference": "55555d31a622b4bc9662664132a0533ae6ef47b1"
+                "reference": "b942d263c641ddb5190929ff840c68f78713e937"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/55555d31a622b4bc9662664132a0533ae6ef47b1",
-                "reference": "55555d31a622b4bc9662664132a0533ae6ef47b1",
+                "url": "https://api.github.com/repos/myclabs/php-enum/zipball/b942d263c641ddb5190929ff840c68f78713e937",
+                "reference": "b942d263c641ddb5190929ff840c68f78713e937",
                 "shasum": ""
             },
             "require": {
@@ -4690,7 +4690,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/php-enum/issues",
-                "source": "https://github.com/myclabs/php-enum/tree/1.8.1"
+                "source": "https://github.com/myclabs/php-enum/tree/1.8.3"
             },
             "funding": [
                 {
@@ -4702,7 +4702,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-29T09:20:05+00:00"
+            "time": "2021-07-05T08:18:36+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -5318,16 +5318,16 @@
         },
         {
             "name": "partymeister/slides",
-            "version": "1.1.7",
+            "version": "1.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/partymeister/partymeister-slides.git",
-                "reference": "7f121fc3459dadef7cf9a54e4279d02d156ac3d6"
+                "reference": "4f4c69bee25fff6139e421efac5dc9efadd049fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/7f121fc3459dadef7cf9a54e4279d02d156ac3d6",
-                "reference": "7f121fc3459dadef7cf9a54e4279d02d156ac3d6",
+                "url": "https://api.github.com/repos/partymeister/partymeister-slides/zipball/4f4c69bee25fff6139e421efac5dc9efadd049fa",
+                "reference": "4f4c69bee25fff6139e421efac5dc9efadd049fa",
                 "shasum": ""
             },
             "require": {
@@ -5367,9 +5367,9 @@
             ],
             "support": {
                 "issues": "https://github.com/partymeister/partymeister-slides/issues",
-                "source": "https://github.com/partymeister/partymeister-slides/tree/1.1.7"
+                "source": "https://github.com/partymeister/partymeister-slides/tree/1.1.8"
             },
-            "time": "2021-07-04T17:14:42+00:00"
+            "time": "2021-07-05T09:22:41+00:00"
         },
         {
             "name": "php-console/php-console",

@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+var path = require('path');
 
 mix.options({
     hmrOptions: {
@@ -51,7 +52,8 @@ mix
     .js('packages/partymeister-slides/resources/assets/js/slidemeister/frontend.js', 'public/js/slidemeister.js')
     .js('packages/partymeister-slides/resources/assets/js/font-loader.js', 'public/js/slidemeister-font-loader.js')
     .js('packages/partymeister-accounting/resources/assets/js/partymeister-accounting-pos.js', 'public/js/partymeister-accounting-pos.js')
-    .js('packages/motor-docs/resources/assets/js/motor-docs.js', 'public/js/motor-docs.js')
+    // .js('packages/motor-docs/resources/assets/js/motor-docs.js', 'public/js/motor-docs.js')
+    .vue()
     .sourceMaps()
     .sass('packages/motor-docs/resources/assets/sass/motor-docs.scss', 'public/css')
     .sass('resources/assets/sass/project.package-development.scss', 'public/css/motor-backend.css')
@@ -64,6 +66,6 @@ mix
     .copy('resources/assets/images/*.*', 'public/images')
 ;
 
-if (mix.config.inProduction) {
+if (mix.inProduction()) {
     mix.version();
 }

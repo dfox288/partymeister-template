@@ -1,5 +1,6 @@
 /entries
 /node_modules
+/public/media
 /public/storage
 /storage/*.key
 /vendor
